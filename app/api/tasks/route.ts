@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/db";
 import Task from "@/models/Task";
 import User from "@/models/User";
-import { auth } from "@/app/api/auth/[...nextauth]/route";
+import { auth } from "@/lib/auth";
 
 // GET: Soo qaado dhammaan task-yada
 export async function GET() {
